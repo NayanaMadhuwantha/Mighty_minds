@@ -1,0 +1,27 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Nayana Madhuwantha
+ * Date: 4/5/2021
+ * Time: 8:16 PM
+ */
+
+session_start();
+include 'Database.include.php';
+date_default_timezone_set("Asia/Colombo");
+$username=$_POST['username'];
+$password=$_POST['password'];
+//$encriptedPassword=md5($password);
+
+$Database = new Database();
+$conn = $Database->getConnection();
+
+$sql="SELECT * FROM admin WHERE username='".$username."' AND password='".$password."'";
+$result=$conn->query($sql);
+
+if(!$row=$result->fetch_assoc()){
+    header("Location: ../index.php?error=incorrectUsernameOrPassword");
+}else{
+    $_SESSION['username']=$row['username'];
+    header("Location: ../index.php");
+}
