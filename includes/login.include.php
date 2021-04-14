@@ -16,12 +16,13 @@ $password=$_POST['password'];
 $Database = new Database();
 $conn = $Database->getConnection();
 
-$sql="SELECT * FROM admin WHERE username='".$username."' AND password='".$password."'";
+$sql="SELECT * FROM employee WHERE `Name`='".$username."' AND Password='".$password."'";
 $result=$conn->query($sql);
 
 if(!$row=$result->fetch_assoc()){
     header("Location: ../index.php?error=incorrectUsernameOrPassword");
 }else{
-    $_SESSION['username']=$row['username'];
+    $_SESSION['username']=$row['Name'];
+    $_SESSION['userInfo']=$row;
     header("Location: ../index.php");
 }
