@@ -31,6 +31,10 @@
                       <input type="file" placeholder="Event photo" id="exampleInputFile" accept="image/jpeg" name="eventPhoto" required>
                     
                     </div>
+                    <div class="form-group">
+                      <label for="attachment">Attachment</label>
+                      <input type="file" class="form-control"  id="attachment"  name="attachment">
+                    </div>
                    
                   </div>
                   <!-- /.card-body -->

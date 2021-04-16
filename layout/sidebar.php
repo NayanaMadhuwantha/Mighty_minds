@@ -22,12 +22,12 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
               <!-- Add icons to the links using the .nav-icon class
                    with font-awesome or any other icon font library -->
-                   <li class="nav-header">MISCELLANEOUS</li>
+                   <!-- <li class="nav-header">MISCELLANEOUS</li> -->
               <li class="nav-item">
                 <a href="events.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
-                    Events
+                    Answer the Questionnaire!
                     
                   </p>
                 </a>
@@ -36,12 +36,56 @@
                 <a href="team.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
-                    Team
+                   My Mood
                   
                   </p>
                 </a>
               </li>
-             
+              <li class="nav-item">
+                <a href="team.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   Articles
+                  
+                  </p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="team.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   Search Vendors
+                  
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="team.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   Add Vendors
+                  
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="team.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   Add Employees
+                  
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="team.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   Predict Moods
+                  
+                  </p>
+                </a>
+              </li>
               
             </ul>
           </nav>
