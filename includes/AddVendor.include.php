@@ -27,7 +27,7 @@ $attachments='uploads/' . $Attach;
 $Database = new Database();
 $conn = $Database->getConnection();
 
-$sql="INSERT INTO vendor(`Name`,Email,Service,WebsiteOrSocialMedia,ContactNumber,Location,Attachments) 
+$sql="INSERT INTO vendor(`Name`,Email,Service,WebsiteOrSocialMedia,ContactNumber,Location,Attachment) 
       VALUES('".$name."','".$email."','".$service."','".$website."','".$contact."','".$location."','".$attachments."')";
 
 
