@@ -16,15 +16,21 @@ include('layout/sidebar.php');
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form method="post" action="layout/newevent.include.php" enctype="multipart/form-data">
+            <form method="post" action="includes/AddEmployee.include.php">
               <div class="card-body">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input id="name" name="name" type="text" class="form-control" placeholder="Name">
-                </div>
+                  <input id="name" name="name" type="text" class="form-control" placeholder="Name" required>
+                </div>     
+              
                 <div class="form-group">
-                  <label for="employeeID">Employee ID</label>
-                  <input id="employeeID" name="employeeID" type="text" class="form-control" placeholder="employeeID">
+                  <label for="supervisor">Email</label>
+                  <input id="supervisor" name="email" type="text" class="form-control" placeholder="email" required>
+                </div>      
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input id="password" name="password" type="password" class="form-control" placeholder="password" required>
                 </div>
                 <div class="form-group">
                   <label for="supervisor">Supervisor</label>
@@ -46,11 +52,7 @@ include('layout/sidebar.php');
                   <label for="location">Location</label>
                   <input id="location" name="location" type="text" class="form-control" placeholder="Location">
                 </div>
-                <div class="form-group">
-                  <label for="contactNumber">Contact Number</label>
-                  <input id="contactNumber" name="contactNumber" type="text" class="form-control" placeholder="Contact Number">
-                </div>
-
+              
               </div>
               <!-- /.card-body -->
 

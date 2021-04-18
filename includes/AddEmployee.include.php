@@ -9,20 +9,23 @@ session_start();
 include 'Database.include.php';
 date_default_timezone_set("Asia/Colombo");
 
-$name=$_POST['vendorName'];
+$name=$_POST['name'];
 $password=$_POST['password'];
 $email=$_POST['email'];
 $department=$_POST['department'];
 $supervisor=$_POST['supervisor'];
 $location=$_POST['location'];
 
-$sql="INSERT INTO vendor(`Name`,Password,Email,Department,Location,Supervisor) 
+$sql="INSERT INTO employee(`Name`,Password,Email,Department,Location,Supervisor) 
       VALUES('".$name."','".$password."','".$email."','".$department."','".$location."','".$supervisor."')";
+
+$Database = new Database();
+$conn = $Database->getConnection();
 
 $result=$conn->query($sql);
 
 if($result){
-    header("Location: ../index.php?error=EmployeeNotAdded");
+    header("Location: ../addemployee.php?error=EmployeeNotAdded");
 }else{
-    header("Location: ../index.php");
+    header("Location: ../addemployee.php");
 }

@@ -1,7 +1,7 @@
 <?php 
 session_start();
-  if(isset($_SESSION['userName'])){
-    header("Location: dashboard.php");
+if(isset($_SESSION['username'])){
+    header("Location: setmood.php");
   }
   include('layout/header.php');
    
@@ -17,7 +17,7 @@ session_start();
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action=""  method="post" enctype="multipart/form-data">
+                <form action="includes/login.include.php"  method="post" enctype="multipart/form-data">
                   <div class="card-body">
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>

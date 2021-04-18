@@ -16,15 +16,15 @@ include('layout/sidebar.php');
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form method="post" action="layout/newevent.include.php" enctype="multipart/form-data">
+            <form method="post" action="includes/AddVendor.include.php" enctype="multipart/form-data">
               <div class="card-body">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input id="name" name="name" type="text" class="form-control" placeholder="Name">
+                  <input id="name" name="vendorName" type="text" class="form-control" placeholder="Name" required>
                 </div>
                 <div class="form-group">
                   <label for="email">Email</label>
-                  <input id="email" name="email" type="text" class="form-control" placeholder="Email">
+                  <input id="email" name="email" type="text" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                   <label for="service">Service</label>
@@ -46,8 +46,12 @@ include('layout/sidebar.php');
                 </div>
                 <div class="form-group">
                   <label for="contactNumber">Contact Number</label>
-                  <input id="contactNumber" name="contactNumber" type="text" class="form-control" placeholder="Contact Number">
+                  <input id="contactNumber" name="contact" type="text" class="form-control" placeholder="Contact Number">
                 </div>
+                <div class="form-group">
+                      <label for="attachment">Attachment</label>
+                      <input type="file" class="form-control"  id="attachment"  name="attachment">
+                    </div>
 
               </div>
               <!-- /.card-body -->

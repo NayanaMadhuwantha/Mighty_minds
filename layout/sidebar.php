@@ -13,7 +13,7 @@
               <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block">John Doe</a>
+              <a href="viewprofile.php" class="d-block">John Doe</a>
             </div>
           </div>
        
@@ -24,7 +24,7 @@
                    with font-awesome or any other icon font library -->
                    <!-- <li class="nav-header">MISCELLANEOUS</li> -->
               <li class="nav-item">
-                <a href="events.php" class="nav-link">
+                <a href="setmood.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Answer the Questionnaire!
@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="team.php" class="nav-link">
+                <a href="setmood.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                    My Mood
@@ -60,7 +60,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="team.php" class="nav-link">
+                <a href="addvendors.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                    Add Vendors
@@ -69,7 +69,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="team.php" class="nav-link">
+                <a href="addemployee.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                    Add Employees

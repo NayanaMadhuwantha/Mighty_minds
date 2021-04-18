@@ -15,7 +15,14 @@ $service=$_POST['service'];
 $website=$_POST['website'];
 $contact=$_POST['contact'];
 $location=$_POST['location'];
-$attachments=$_POST['attachments'];
+
+
+$temp = explode(".", $_FILES["attachment"]["name"]);
+$Attach = 'attachment'.round(microtime(true)) . '.' . end($temp);
+move_uploaded_file($_FILES["attachment"]["tmp_name"],"../uploads/" . $Attach);
+
+$attachments='uploads/' . $Attach;
+
 
 $Database = new Database();
 $conn = $Database->getConnection();
@@ -23,10 +30,12 @@ $conn = $Database->getConnection();
 $sql="INSERT INTO vendor(`Name`,Email,Service,WebsiteOrSocialMedia,ContactNumber,Location,Attachments) 
       VALUES('".$name."','".$email."','".$service."','".$website."','".$contact."','".$location."','".$attachments."')";
 
+
+
 $result=$conn->query($sql);
 
 if($result){
-    header("Location: ../index.php?error=VendorNotAdded");
+    header("Location: ../addvendors.php?error=VendorNotAdded");
 }else{
-    header("Location: ../index.php");
+    header("Location: ../addvendors.php");
 }
