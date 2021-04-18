@@ -1,4 +1,8 @@
 <?php
+
+include 'includes/Database.include.php';
+date_default_timezone_set("Asia/Colombo");
+
 include('layout/header.php');
 include('layout/navbar.php');
 include('layout/sidebar.php');
@@ -86,17 +90,30 @@ include('layout/sidebar.php');
                 </thead>
                 <tbody>
                      
-                  <tr>
-                  <td>01</td>
-                  <td>John Doe</td>
-                  <td>HR</td>
-                  <td>Johndoe@gmail.com</td>
-                  <td class="text-right py-0 align-middle">
-                    <div class="btn-group btn-group-sm">
-                      <a href="#" class="btn btn-info"><i class='fas fa-edit'></i></a>
-                    </div>
-                  </td>
-                 
+                <?php
+
+$Database = new Database();
+$conn = $Database->getConnection();
+            
+            $sq="SELECT * FROM employee WHERE role='user'";
+            $result=$conn->query($sq);
+
+              while ($row=$result->fetch_assoc()) {
+               echo "
+               <tr>
+               <td>".$row['ID']."</td>
+               <td>".$row['Name']."</td>
+               <td>".$row['Department']."</td>
+               <td>".$row['Email']."</td>
+               <td class='text-right py-0 align-middle'>
+                 <div class='btn-group btn-group-sm'>
+                   <a href='#' class='btn btn-info'><i class='fas fa-edit'></i></a>
+                 </div>
+               </td>
+               ";
+
+              }
+                ?>
 
 
 
