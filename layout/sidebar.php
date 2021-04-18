@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="setmood.php" class="nav-link">
+                <a href="showmood.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                    My Mood
@@ -86,7 +86,15 @@
                   </p>
                 </a>
               </li>
-              
+              <li class="nav-item">
+                <a href="moodHistory.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   Mood History
+                  
+                  </p>
+                </a>
+              </li>
             </ul>
           </nav>
           <!-- /.sidebar-menu -->

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+    header("Location: login.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +17,12 @@
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.css">
+    <style>
+     #chart-container {
+        width: 640px;
+        height: auto;
+      }
+    </style>
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">

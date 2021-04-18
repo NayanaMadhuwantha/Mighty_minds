@@ -1,0 +1,22 @@
+.form-container{
+    background-color:rgb(228, 222, 222);
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.chart-holder{
+    position: relative;
+    height: 1000px;
+}
+
+
+.chart-image{
+    position:absolute;
+   
+}
+
+.chart-container{
+    position: absolute;
+    z-index: 122;
+}
