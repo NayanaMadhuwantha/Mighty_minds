@@ -95,6 +95,24 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="newpage1.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   NewPage1
+                  
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="newpage2.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                   NewPage2
+                  
+                  </p>
+                </a>
+              </li>
             </ul>
           </nav>
           <!-- /.sidebar-menu -->

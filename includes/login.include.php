@@ -21,7 +21,7 @@ $sql="SELECT * FROM employee WHERE `Name`='".$username."' AND Password='".$passw
 $result=$conn->query($sql);
 
 if(!$row=$result->fetch_assoc()){
-    header("Location: ../login.php?error=incorrectUsernameOrPassword");
+    header("Location: ../index.php?error=incorrectUsernameOrPassword");
 }else{
     $_SESSION['username']=$row['Name'];
     $_SESSION['userInfo']=$row;

@@ -9,8 +9,7 @@ if (isset($_GET["range"]) && isset($_GET["empId"])){
     $range=$_GET["range"];
     $empId=$_GET["empId"];
     $_SESSION['empId']=$empId;
-   }
-   else{
+   }else{
     $range=3;
     $empId=1;
     $_SESSION['empId']=$empId;
@@ -19,7 +18,7 @@ if (isset($_GET["range"]) && isset($_GET["empId"])){
    $Database = new Database();
    $conn = $Database->getConnection();
    
-   $sql="SELECT Mood, DatePosted FROM mood WHERE EmployeeID =".$empId." ORDER BY DatePosted DESC LIMIT ".$range."";
+   $sql="SELECT Mood, DatePosted FROM mood WHERE EmployeeID =". $_SESSION['empId']." ORDER BY DatePosted DESC LIMIT ".$range."";
    
    
 
