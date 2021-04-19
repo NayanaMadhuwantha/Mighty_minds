@@ -101,6 +101,15 @@
                   </p>
                 </a>
               </li>
+                <li class="nav-item">
+                    <a href="employeeCredits.php" class="nav-link">
+                        <i class="nav-icon fas fa-history"></i>
+                        <p>
+                            Employee Credits
+
+                        </p>
+                    </a>
+                </li>
             </ul>
           </nav>
           <!-- /.sidebar-menu -->
