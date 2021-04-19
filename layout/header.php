@@ -3,6 +3,7 @@ session_start();
 if(!isset($_SESSION['username'])){
     header("Location: login.php");
   }
+  $server=$_SERVER['SERVER_ADDR'];
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +15,7 @@ if(!isset($_SESSION['username'])){
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.css">
     <style>
