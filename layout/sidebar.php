@@ -42,8 +42,11 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="team.php" class="nav-link">
-                  <i class="nav-icon fas fa-file"></i>
+
+              
+                <a href="articles.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+
                   <p>
                    Articles
                   
@@ -51,8 +54,11 @@
                 </a>
               </li>
                 <li class="nav-item">
-                <a href="team.php" class="nav-link">
-                  <i class="nav-icon fas fa-search"></i>
+
+               
+                <a href="searchVendors.php" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+
                   <p>
                    Search Vendors
                   
