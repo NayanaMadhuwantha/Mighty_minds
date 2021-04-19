@@ -25,7 +25,7 @@
                    <!-- <li class="nav-header">MISCELLANEOUS</li> -->
               <li class="nav-item">
                 <a href="setmood.php" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <i class="nav-icon fas fa-question"></i>
                   <p>
                     Answer the Questionnaire!
                     
@@ -34,7 +34,7 @@
               </li>
               <li class="nav-item">
                 <a href="showmood.php" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <i class="nav-icon fas fa-smile"></i>
                   <p>
                    My Mood
                   
@@ -42,8 +42,11 @@
                 </a>
               </li>
               <li class="nav-item">
+
+              
                 <a href="articles.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
+
                   <p>
                    Articles
                   
@@ -51,8 +54,11 @@
                 </a>
               </li>
                 <li class="nav-item">
+
+               
                 <a href="searchVendors.php" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
+
                   <p>
                    Search Vendors
                   
@@ -61,7 +67,7 @@
               </li>
               <li class="nav-item">
                 <a href="addvendors.php" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <i class="nav-icon fas fa-plus"></i>
                   <p>
                    Add Vendors
                   
@@ -70,7 +76,7 @@
               </li>
               <li class="nav-item">
                 <a href="addemployee.php" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <i class="nav-icon fas fa-plus"></i>
                   <p>
                    Add Employees
                   
@@ -79,7 +85,7 @@
               </li>
               <li class="nav-item">
                 <a href="team.php" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <i class="nav-icon fas fa-table"></i>
                   <p>
                    Predict Moods
                   
@@ -88,7 +94,7 @@
               </li>
               <li class="nav-item">
                 <a href="moodHistory.php" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
+                  <i class="nav-icon fas fa-history"></i>
                   <p>
                    Mood History
                   

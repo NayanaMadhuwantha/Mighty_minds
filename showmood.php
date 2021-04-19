@@ -31,6 +31,7 @@ include('layout/sidebar.php');
 
 
 <?php
+echo $server;
 include('layout/scripts.php');
 include('layout/footer.php');
 ?>

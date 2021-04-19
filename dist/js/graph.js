@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	chart();
 
+    console.log(jsVar);
+
     $("#threeday").click(function(){
        
         destroyChart();
