@@ -11,11 +11,11 @@ Update Local server credentials in following files
 Software versions
 
     php - 7.2
-    python - 3.8
+    python - 3.8 => Need to add python path to environmental variables
     MySql - 5.6
     Apache - 2.4.46
     
-Install require python libraries
+Install require python libraries 
 
     pip install mysql-connector-python
     pip install pandas
