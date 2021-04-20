@@ -5,8 +5,16 @@
  * Date: 4/13/2021
  * Time: 10:24 PM
  */
+session_start();
+include 'Database.include.php';
+date_default_timezone_set("Asia/Colombo");
 
-$tmp = shell_exec("C:\\Users\\Ashan\\AppData\\Local\\Programs\\Python\\Python39\\python.exe D:\\Xamp\\htdocs\\MightyMinds\\Mighty_minds\\includes\\predict.py 2 7");
+
+if (isset($_GET["range"])){
+    $range=$_GET["range"];
+}
+
+$tmp = shell_exec("C:\\Users\\Ashan\\AppData\\Local\\Programs\\Python\\Python39\\python.exe D:\\Xamp\\htdocs\\MightyMinds\\Mighty_minds\\includes\\predict.py ".$_SESSION['userInfo']['ID']." ".$range."");
 
 
 
@@ -19,9 +27,15 @@ $pieces = explode(",", $res);
 
 $date = date("Y-m-d");
 
- $data = array();
- foreach ($pieces as $row) {
-    $data[] = array("Mood"=>$row,"DatePosted"=>$date);
+$data = array();
+foreach ($pieces as $row) {
     $date = date ("Y-m-d", strtotime("+1 day", strtotime($date)));
+    $data[] = array("Mood"=>$row,"DatePosted"=>$date);
+
 }
-print json_encode($data);
+
+
+$json= json_encode($data);
+$json=str_replace( array( '\n'), '', $json);
+
+print $json;
