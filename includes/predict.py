@@ -46,7 +46,7 @@ for x in range(forcastDayCount):
     table.loc[len(table.index)] = [str(modified_date),'','','','',0]
 
 df = table[['DatePosted','label']]
-train=df[0:dataLenght] 
+train=df[0 :dataLenght] 
 test=df[dataLenght:]
 
 y_hat_avg = test.copy()

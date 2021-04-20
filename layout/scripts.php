@@ -10,15 +10,3 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
 
-<?php
-echo "
-<script language='javascript' type='text/javascript'>
-       var jsVar= 5;
-    </script>
-
-";
-
-?>
-  
-
-<script src="dist/js/graph.js"></script>

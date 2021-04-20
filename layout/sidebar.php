@@ -84,7 +84,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="team.php" class="nav-link">
+                <a href="moodPredict.php" class="nav-link">
                   <i class="nav-icon fas fa-table"></i>
                   <p>
                    Predict Moods

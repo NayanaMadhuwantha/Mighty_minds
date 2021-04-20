@@ -28,10 +28,19 @@ include('layout/sidebar.php');
     </div>
 </div>
 
+<script src="https://use.fontawesome.com/ef4ad7671b.js"></script>
+<!-- jQuery -->
 
+<script src="dist/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+<script src="dist/js/graph.js"></script>
 
 <?php
-echo $server;
-include('layout/scripts.php');
+
 include('layout/footer.php');
 ?>
