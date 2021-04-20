@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Nayana Madhuwantha
- * Date: 4/8/2021
- * Time: 11:28 PM
- */
 session_start();
 include 'Database.include.php';
 date_default_timezone_set("Asia/Colombo");
