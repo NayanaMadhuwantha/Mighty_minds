@@ -1,4 +1,5 @@
 var ctx = document.getElementById('myChart').getContext('2d');
+var serverAddress="http://localhost/mightyMinds/Mighty_minds";
 
 $(document).ready(function(){
 
@@ -39,7 +40,7 @@ $(document).ready(function(){
 
 function chart(range=2) {
     $.ajax({
-		url : "http://localhost/mightyMinds/Mighty_minds/includes/graph.include.php?range="+range,
+		url : serverAddress+"/includes/graph.include.php?range="+range,
 		type : "GET",
         dataType: "json",
 		success : function(data){

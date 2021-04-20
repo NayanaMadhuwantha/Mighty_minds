@@ -1,3 +1,5 @@
+var serverAddress="http://localhost/mightyMinds/Mighty_minds";
+
 $(document).ready(function(){
 
     window.bla=1;
@@ -46,7 +48,7 @@ $(document).ready(function(){
 
 function chart2(range=2,id) {
     $.ajax({
-		url : "http://localhost/mightyMinds/Mighty_minds/includes/moodhistory.include.php?range="+range+"&empId="+id,
+		url : serverAddress+"/includes/moodhistory.include.php?range="+range+"&empId="+id,
 		type : "GET",
         dataType: "json",
 		success : function(data){

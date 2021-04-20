@@ -1,5 +1,5 @@
 var ctx2 = document.getElementById('myChart2').getContext('2d');
-
+var serverAddress="http://localhost/mightyMinds/Mighty_minds";
 
 $(document).ready(function(){
 	chart3(4);
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 function chart3(range=2) {
     $.ajax({
-		url : "http://localhost/mightyMinds/Mighty_minds/includes/predict.include.php?range="+range,
+		url : serverAddress+"/includes/predict.include.php?range="+range,
 		type : "GET",
         dataType: "json",
 		success : function(data){
