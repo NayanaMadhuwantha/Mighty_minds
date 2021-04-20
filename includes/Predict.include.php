@@ -15,10 +15,10 @@ if (isset($_GET["range"])){
 }
 
 $tmp = shell_exec("C:\\Users\\Ashan\\AppData\\Local\\Programs\\Python\\Python39\\python.exe D:\\Xamp\\htdocs\\MightyMinds\\Mighty_minds\\includes\\predict.py ".$_SESSION['userInfo']['ID']." ".$range."");
+//$tmp = shell_exec("C:\\Users\\Nayana\\AppData\\Local\\Programs\\Python\\Python39\\python.exe C:\\xampp2\\htdocs\\Mighty_minds\\includes\\predict.py 1 8");
 
 
-
-$res=str_replace( array( '[', ']','\''), '', $tmp);
+$res=str_replace( array( '[',']','\'',' '), '', $tmp);
 
 
 
@@ -37,6 +37,6 @@ foreach ($pieces as $row) {
 
 
 $json= json_encode($data);
-$json=str_replace( array( '\n'), '', $json);
+$json=str_replace( array( '\n',' '), '', $json);
 
 print $json;
