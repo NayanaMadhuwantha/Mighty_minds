@@ -92,24 +92,28 @@
                   </p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="moodHistory.php" class="nav-link">
-                  <i class="nav-icon fas fa-history"></i>
-                  <p>
-                   Mood History
-                  
-                  </p>
-                </a>
-              </li>
-                <li class="nav-item">
-                    <a href="employeeCredits.php" class="nav-link">
-                        <i class="nav-icon fas fa-history"></i>
-                        <p>
-                            Employee Credits
-
-                        </p>
-                    </a>
-                </li>
+                <?php
+                if ($_SESSION['userInfo']['role']=='asd'){
+                    echo '<li class="nav-item">
+                            <a href="moodHistory.php" class="nav-link">
+                              <i class="nav-icon fas fa-history"></i>
+                              <p>
+                               Mood History
+                              
+                              </p>
+                            </a>
+                          </li>
+                            <li class="nav-item">
+                                <a href="employeeCredits.php" class="nav-link">
+                                    <i class="nav-icon fas fa-history"></i>
+                                    <p>
+                                        Employee Credits
+            
+                                    </p>
+                                </a>
+                            </li>';
+                }
+                ?>
             </ul>
           </nav>
           <!-- /.sidebar-menu -->
