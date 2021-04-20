@@ -20,3 +20,6 @@ Install require python libraries
     pip install mysql-connector-python
     pip install pandas
     pip install statsmodels
+
+Do not enter duplicate 'DatePosted' values for same EmployeeID in 'mood' table
+Fill the Data until today in 'mood' table
