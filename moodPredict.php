@@ -25,6 +25,7 @@ include('layout/sidebar.php');
                 </div>
             </div>
             
+            <button onclick="myFunction()" style="margin:10px" class="btn btn-primary">Compare</button>
            
 
         </div>
@@ -32,6 +33,11 @@ include('layout/sidebar.php');
 </div>
 
 <script>
+
+function myFunction() {
+  window.open("compare.php", '_blank', 'location=yes,height=570,width=1024,scrollbars=yes,status=yes');
+}
+
 // Get the modal
 var modal = document.getElementById("myModal");
 

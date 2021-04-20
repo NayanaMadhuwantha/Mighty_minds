@@ -49,16 +49,31 @@ include('layout/sidebar.php');
   echo "<br>";
   if (!$row=$result->fetch_assoc()) {
       echo '<form action="includes/Mood.include.php" method="post">
-            <input type="hidden" name="employeeID" value="' . $_SESSION['userInfo']['ID'] . '">
-            <input type="radio" id="vehicle1" name="mood" value="Bad" required>
-            <label for="mood">Bad</label><br>
-            <input type="radio" id="vehicle2" name="mood" value="Okay" required>
-            <label for="mood">Okay</label><br>
-            <input type="radio" id="vehicle3" name="mood" value="Good" required>
-            <label for="mood">Good</label><br>
-            <input type="radio" id="vehicle3" name="mood" value="Great" required>
-            <label for="mood">Great</label><br>
-            <button type="submit">Submit</button>
+      <input type="hidden" name="employeeID" value="' . $_SESSION['userInfo']['ID'] . '">
+      <table style="width:50%; margin: 10px;">
+      <tr>
+      <td> <input type="radio" id="vehicle1" name="mood" value="Bad" required></td>
+      <td> <label for="mood">Bad</label></td>
+      <td><i class="fas fa-frown"></i></td>
+      </tr>
+      <tr>
+      <td> <input type="radio" id="vehicle2" name="mood" value="Okay" required></td>
+      <td> <label for="mood">Okay</label></td>
+      <td> <i class="fas fa-meh"></i></td>
+      </tr>
+      <tr>
+      <td> <input type="radio" id="vehicle3" name="mood" value="Good" required></td>
+      <td><label for="mood">Good</label></td>
+      <td><i class="fas fa-smile"></i></td>
+      </tr>
+      <tr>
+      <td> <input type="radio" id="vehicle3" name="mood" value="Great" required></td>
+      <td>  <label for="mood">Great</label></td>
+      <td>  <i class="fas fa-laugh"></i></td>
+      </tr>
+      </table>
+           
+        <button class="btn btn-primary" type="submit">Submit</button>
           </form>';
   }
   else{
