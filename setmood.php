@@ -21,11 +21,23 @@ include('layout/sidebar.php');
             <!-- form start -->
            
               <div class="card-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div>Date : <?=date("Y/m/d")?></div>
+                      </div>
+                      <div class="col-md-6">
+                          <div>Department : <?=$_SESSION['userInfo']['Department']?></div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div>Day : <?=date("l")?></div>
+                      </div>
+                      <div class="col-md-6">
+                          <div>Supervisor : <?=$_SESSION['userInfo']['Supervisor']?></div>
+                      </div>
+                  </div>
                <?php
-  echo $_SESSION['userInfo']['Name'];
-  echo date("Y/m/d") ;
-  echo date("l") ;
-
 
   //find whether mood submitted or not
   $Database = new Database();
@@ -34,7 +46,7 @@ include('layout/sidebar.php');
   $result=$conn->query($sql);
 
 
-  echo "<br><hr>";
+  echo "<br>";
   if (!$row=$result->fetch_assoc()) {
       echo '<form action="includes/Mood.include.php" method="post">
             <input type="hidden" name="employeeID" value="' . $_SESSION['userInfo']['ID'] . '">

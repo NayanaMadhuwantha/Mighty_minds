@@ -19,27 +19,27 @@ include('layout/sidebar.php');
               <div class="card-body">
                 <div class="form-group">
                   <label>Name</label>
-                  <h3>John Doe</h3>
+                  <h3><?=$_SESSION['userInfo']['Name']?></h3>
                 </div>
                 <div class="form-group">
                   <label>Employee ID</label>
-                  <h3>007</h3>
+                  <h3><?=$_SESSION['userInfo']['ID']?></h3>
                 </div>
                 <div class="form-group">
                   <label >Supervisor</label>
-                  <h3>Jane Doe</h3>
+                  <h3><?=$_SESSION['userInfo']['Supervisor']?></h3>
                 </div>
                 <div class="form-group">
                   <label>Email</label>
-                  <h3>johndoe@gmail.com</h3>
+                  <h3><?=$_SESSION['userInfo']['Email']?></h3>
                 </div>
                 <div class="form-group">
                   <label>Department</label>
-                  <h3>HR</h3>
+                  <h3><?=$_SESSION['userInfo']['Department']?></h3>
                 </div>
                 <div class="form-group">
                   <label>Location</label>
-                  <h3>Colombo</h3>
+                  <h3><?=$_SESSION['userInfo']['Location']?></h3>
                 </div>
 
               </div>

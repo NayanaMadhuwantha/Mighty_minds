@@ -13,7 +13,7 @@
               <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="viewprofile.php" class="d-block">John Doe</a>
+              <a href="viewprofile.php" class="d-block"><?=$_SESSION['userInfo']['Name']?></a>
             </div>
           </div>
        
