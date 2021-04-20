@@ -27,6 +27,7 @@ $pieces = explode(",", $res);
 
 $date = date("Y-m-d");
 
+
 $data = array();
 foreach ($pieces as $row) {
     $date = date ("Y-m-d", strtotime("+1 day", strtotime($date)));
