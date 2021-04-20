@@ -2,33 +2,33 @@ var ctx2 = document.getElementById('myChart2').getContext('2d');
 var serverAddress="http://localhost/mightyMinds/Mighty_minds";
 
 $(document).ready(function(){
-	chart3(4);
+	chart3(3);
    
     
 
     $("#threeday3").click(function(){
        
         destroyChart2();
-        chart3(4);
+        chart3(3);
 
     });
 
     $("#sevenday3").click(function(){
        
         destroyChart2();
-        chart3(8);
+        chart3(7);
 
     });
     $("#fourteenday3").click(function(){
        
         destroyChart2();
-        chart3(15);
+        chart3(14);
 
     });
     $("#thirtyday3").click(function(){
        
         destroyChart2();
-        chart3(31);
+        chart3(30);
 
     });
 
