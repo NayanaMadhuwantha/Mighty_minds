@@ -57,28 +57,31 @@ else{
     $datediff = $your_date - $now;
     $datediff = round($datediff / (60 * 60 * 24));
 
-    while ($row = $result->fetch_assoc()) {
-        $empID= $row['EmployeeID'];
-        $tmp = shell_exec("python includes/predict.py ".$empID." " . $datediff);
-        $res = str_replace(array('[', ']', '\''), '', $tmp);
-        $pieces = explode(",", $res);
-        $badCount = 0;
-        $greatCount = 0;
-        foreach ($pieces as $row) {
-            if (trim($row) == 'Bad') {
-                $badCount++;
+    if ($datediff>1) {
+        while ($row = $result->fetch_assoc()) {
+            $empID = $row['EmployeeID'];
+            $tmp = shell_exec("python includes/predict.py " . $empID . " " . $datediff);
+            $res = str_replace(array('[', ']', '\''), '', $tmp);
+            $pieces = explode(",", $res);
+            $badCount = 0;
+            $greatCount = 0;
+            foreach ($pieces as $row) {
+                if (trim($row) == 'Bad') {
+                    $badCount++;
+                }
+                if (trim($row) == 'Great') {
+                    $greatCount++;
+                }
             }
-            if (trim($row) == 'Great') {
-                $greatCount++;
+            if ($maxBadCount < $badCount) {
+                $maxBadCount = $badCount;
+                $frustratedEmployee = $empID;
             }
-        }
-        if ($maxBadCount<$badCount){
-            $maxBadCount = $badCount;
-            $frustratedEmployee = $empID;
-        }
-        if ($maxGreatCount<$greatCount){
-            $maxGreatCount = $greatCount;
-            $happiestEmployee = $empID;
+            if ($maxGreatCount < $greatCount) {
+                $maxGreatCount = $greatCount;
+                $happiestEmployee = $empID;
+
+            }
         }
     }
 }
