@@ -14,7 +14,7 @@ if (isset($_GET["range"])){
  $range=$_GET["range"];
 }
 
-$tmp = shell_exec("C:\\Users\\Ashan\\AppData\\Local\\Programs\\Python\\Python39\\python.exe D:\\Xamp\\htdocs\\MightyMinds\\Mighty_minds\\includes\\predict.py 1 ".$range."");
+$tmp = shell_exec("C:\\Users\\Ashan\\AppData\\Local\\Programs\\Python\\Python39\\python.exe D:\\Xamp\\htdocs\\MightyMinds\\Mighty_minds\\includes\\predict.py ".$_SESSION['userInfo']['ID']." ".$range."");
 
 
 

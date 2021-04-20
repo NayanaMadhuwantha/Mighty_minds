@@ -233,18 +233,17 @@ function chart3(range=2) {
  
 			}
 
-            var date=date_r.reverse();
-            var mood=mood_r.reverse();
+            
 
 
 			var ctx = document.getElementById('myChart').getContext('2d');
 window.myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: date,
+        labels: date_r,
         datasets: [{
             label: 'Mood',
-            data: mood,
+            data: mood_r,
             fill: false,
             borderColor: 'rgb(75, 192, 192)',
             tension: 0.1

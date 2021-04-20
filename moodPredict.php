@@ -24,6 +24,7 @@ include('layout/sidebar.php');
                 <canvas id="myChart" width="80%"></canvas>
                 </div>
             </div>
+            <button class="btn btn-primary">Compare with past mood swings</button>
         </div>
     </div>
 </div>
