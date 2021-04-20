@@ -13,6 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
+            <h4>Past Moodswings</h4>
                 <button id="threeday" class="btn btn-primary">3 day</button>
                 <button id="sevenday" class="btn btn-primary">7 day</button>
                 <button id="fourteenday" class="btn btn-primary">14 day</button>
@@ -22,6 +23,7 @@
                 </div>
             </div>
             <div class="col-md-6">
+            <h4>Future Moodswings</h4>
                 <button id="threeday3" class="btn btn-primary">3 day</button>
                 <button id="sevenday3" class="btn btn-primary">7 day</button>
                 <button id="fourteenday3" class="btn btn-primary">14 day</button>
