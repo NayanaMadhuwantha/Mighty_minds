@@ -16,10 +16,10 @@ include('layout/sidebar.php');
            
             
 
-            <div>
+            <div style="margin:10px;" class="form-inline">
             <label for="search">Search</label>
-            <input value="1" id="empId"  type="text" class="form-control" placeholder="Id">
-            <button id="search" class="btn btn-primary">Search</button>
+            <input style="width:50%; margin:10px" value="1" id="empId"  type="text" class="form-control" placeholder="Id">
+            <button  id="search" class="btn btn-primary">Search</button>
             </div>
            
 

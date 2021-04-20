@@ -29,9 +29,9 @@ if ($_FILES['myfile']['size'] > 1000000) {
         $sql = "INSERT INTO articles (`Name`,ArticleName, `Size`) VALUES ('$filename','$articleName', $size)";
         var_dump($sql);
         if ($conn->query($sql)) {
-            header("Location: ../team.php?s=success");
+            header("Location: ../articles.php?s=success");
         }
     } else {
-        header("Location: ../team.php?error=faild");
+        header("Location: ../articles.php?error=faild");
     }
 }
