@@ -93,7 +93,7 @@
                 </a>
               </li>
                 <?php
-                if ($_SESSION['userInfo']['role']=='asd'){
+                if ($_SESSION['userInfo']['role']=='admin'){
                     echo '<li class="nav-item">
                             <a href="moodHistory.php" class="nav-link">
                               <i class="nav-icon fas fa-history"></i>
