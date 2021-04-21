@@ -13,6 +13,13 @@ include('layout/sidebar.php');
     <!-- Content Header (Page header) -->
     <div class="content-header">
         <div class="container-fluid">
+        
+        <div style="margin:10px;" class="form-inline">
+            <label for="search">Search</label>
+            <input style="width:50%; margin:10px" value="1" id="empId"  type="text" class="form-control" placeholder="Id">
+            <button  id="search" class="btn btn-primary">Search</button>
+            </div>
+
         <button id="threeday3" class="btn btn-primary">3 day</button>
         <button id="sevenday3" class="btn btn-primary">7 day</button>
         <button id="fourteenday3" class="btn btn-primary">14 day</button>

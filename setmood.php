@@ -48,7 +48,9 @@ include('layout/sidebar.php');
 
   echo "<br>";
   if (!$row=$result->fetch_assoc()) {
-      echo '<form action="includes/Mood.include.php" method="post">
+      echo '
+      <h4 style="padding:5px;">How would you rate your overall wellbeing levels when you are at work?</h4>
+      <form action="includes/Mood.include.php" method="post">
       <input type="hidden" name="employeeID" value="' . $_SESSION['userInfo']['ID'] . '">
       <table style="width:50%; margin: 10px;">
       <tr>
