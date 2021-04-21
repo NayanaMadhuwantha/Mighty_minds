@@ -3,10 +3,19 @@ session_start();
 include 'Database.include.php';
 date_default_timezone_set("Asia/Colombo");
 
-if (isset($_GET["range"])){
+if (isset($_GET["range"]) && isset($_GET["empId"])){
     $range=$_GET["range"];
-}
-$tmp = shell_exec("python predict.py ".$_SESSION['userInfo']['ID']." ".$range."");
+
+    $empId=$_GET["empId"];
+    $_SESSION['empId']=$empId;
+   }else{
+    $range=3;
+    $empId=1;
+    $_SESSION['empId']=$empId;
+   }
+
+$tmp = shell_exec("python predict.py ".$_SESSION['empId']." ".$range."");
+
 
 $res=str_replace( array( '[',']','\'',' '), '', $tmp);
 $pieces = explode(",", $res);

@@ -103,6 +103,15 @@
                               </p>
                             </a>
                           </li>
+                          <li class="nav-item">
+                            <a href="futureMoods.php" class="nav-link">
+                              <i class="nav-icon fas fa-history"></i>
+                              <p>
+                               Future Moods
+                              
+                              </p>
+                            </a>
+                          </li>
                             <li class="nav-item">
                                 <a href="employeeCredits.php" class="nav-link">
                                     <i class="nav-icon fas fa-history"></i>
