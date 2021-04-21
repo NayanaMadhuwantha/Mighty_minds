@@ -2,41 +2,52 @@ var ctx2 = document.getElementById('myChart2').getContext('2d');
 var serverAddress="http://localhost/mightyMinds/Mighty_minds";
 
 $(document).ready(function(){
-	chart3(3);
+   
+
+    window.bla=1;
+	chart3(3,bla);
    
     
 
     $("#threeday3").click(function(){
        
         destroyChart2();
-        chart3(3);
+        chart3(3,bla);
 
     });
 
     $("#sevenday3").click(function(){
        
         destroyChart2();
-        chart3(7);
+        chart3(7,bla);
 
     });
     $("#fourteenday3").click(function(){
        
         destroyChart2();
-        chart3(14);
+        chart3(14,bla);
 
     });
     $("#thirtyday3").click(function(){
        
         destroyChart2();
-        chart3(30);
+        chart3(30,bla);
+
+    });
+
+    $("#search").click(function(){
+        window.bla = $('#empId').val();
+        console.log(bla);
+        destroyChart2();
+        chart3(3,bla);
 
     });
 
 });
 
-function chart3(range=2) {
+function chart3(range=2,id) {
     $.ajax({
-		url : serverAddress+"/includes/predict.include.php?range="+range,
+		url : serverAddress+"/includes/predict.include.php?range="+range+"&empId="+id,
 		type : "GET",
         dataType: "json",
 		success : function(data){
